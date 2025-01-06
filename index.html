@@ -1,1 +1,86 @@
-<pre><h1>Hi, my name is Hirak.<br>Nice to meet you 😊</h1></pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCraft.ing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F5B0FF;
+            font-family: "Epilogue", serif;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3em;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 4px;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+        }
+
+        .intro p {
+            font-size: 24px;
+        }
+
+        .animate {
+            animation: moveBall 5s ease infinite;
+        }
+
+        @keyframes moveBall {
+            0% {
+                transform: translateX(-100px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateX(100px) rotate(360deg);
+            }
+
+            100% {
+                transform: translateX(-100px) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="MindCrafting Logo" class="animate">
+        <div class="intro">
+            <h1>
+                <span>https://</span>
+                <span>MindCraft.ing</span>
+            </h1>
+            <p>where we create cool stuff to simplify our life</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
