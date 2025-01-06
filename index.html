@@ -21,7 +21,7 @@
         body {
             background-color: #F5B0FF;
             font-family: "Epilogue", serif;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .container {
@@ -32,6 +32,7 @@
             justify-content: center;
             align-items: center;
             row-gap: 3em;
+            padding: 1em;
         }
 
         .intro {
@@ -64,6 +65,16 @@
 
             100% {
                 transform: translateX(-100px) rotate(0deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .intro h1 {
+                font-size: 28px;
+            }
+
+            .intro p {
+                font-size: 14px;
             }
         }
     </style>
